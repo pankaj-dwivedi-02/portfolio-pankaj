@@ -347,3 +347,48 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 40px;
 
 }
+
+
+
+
+
+.bounce-div {
+	/* Choose the animation */
+	animation-name: movingBox;
+  
+	/* The animation’s duration */
+	animation-duration: 1300ms;
+  
+	/* The number of times we want
+		the animation to run */
+	animation-iteration-count: infinite;
+  
+	/* Causes the animation to reverse
+		on every odd iteration */
+	animation-direction: alternate;
+	border-radius: 50%;
+	
+	display: flex;
+	
+	background-color: #7fb5fd;
+	height: 60px;
+	width: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 120px;
+  }
+  
+  @keyframes movingBox {
+
+  
+	100% {
+	  transform: translate(0px, 30px);
+	  opacity: 0.8;
+	}
+  }
+
+  .bounce-div h3{
+	  color: white;
+	  text-transform: capitalize;
+	  display: inline;
+  }
